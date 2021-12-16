@@ -1,0 +1,69 @@
+.contacts-row-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contacts-info-wrapper {
+    width: 470px;
+}
+
+.contacts-info-block + .contacts-info-block {
+    margin-top: 40px;
+}
+
+
+.contacts-info-block-title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.3;
+
+    color: #31405B;
+}
+
+.contacts-info-block-body {
+    font-size: 20px;
+}
+
+.contacts-info-list li {
+    margin-bottom: 15px;
+    
+}
+
+.contacts-info-list a {
+    color: #138ece;
+    text-decoration: none;
+}
+
+.contacts-info-list a:hover {
+    text-decoration: underline;
+}
+
+.contacts-info-list-icon {
+    position: relative;
+    padding-left: 39px;
+}
+
+.contacts-info-list-icon::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.contacts-info-list-icon.phone::before {
+    background-image: url(./../img/feather-icon/phone.svg);
+}
+
+.contacts-info-list-icon.mail::before {
+    background-image: url(./../img/feather-icon/mail.svg);
+}
+
+.contacts-info-list-icon.address::before {
+    background-image: url(./../img/feather-icon/map-pin.svg);
+}
